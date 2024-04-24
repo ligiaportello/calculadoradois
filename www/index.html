@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+ <link rel = "stylesheet" href="lib/boostrap/css/bootstrap.min.css">
+ <link rel="stylesheet" href="components/loader.css">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="components/loader.js"></script>
+<script src="components/calculo.js"></script>
+ 
+<style>
+     body{
+       width:100%;
+       height:100vh;
+       background: pink;
+       background-image: linear-gradient(15deg,rgb( 0,162,255) rgb (119,0,255)100%);
+   }
+   .btn {
+       height: 50px;
+       width: 50px;
+       font-size:1em;
+       border-bottom:2px;
+       background-color: white;
+      
+   }
+</style>
+</head>
+<body class = "d-grid">
+
+ <div class="mx-auto my-auto w-100 bg-dark bg-opacity-50 rounded p-3 d-grid" style="max-width:300px;">
+ <input type ="text" name="Calculadora" id="Calculadora" required disabled placeholder="Calculadora" class= "form-control form-control-lg fs-3 text-end bg-opacity-50 border-0 rounded shadow-none border-bottom" value="0">
+
+ <div class = "row row-cols-4 g-2 mt-1">
+<div class = "col">
+        <button  id ="C" class ="btn w-100 shadow-lg" onclick= "UserClickButton('C')"> C </button>
+</div>
+<div class="col-6">
+       <button id= "Limpar" class="btn w-100  shadow-lg" onclick="ClearData()"> Limpar </button> 
+</div>
+<div class = "col">
+       <button  id="somar" class="btn w-100  shadow-lg" onclick='UserClickButton("+")'> + </button>
+</div>
+<div class = "col">
+       <button id="sete" class="btn w-100 shadow-lg" onclick="UserClickButton('7')"> 7 </button>
+ </div>
+<div class = "col">
+        <button id = "oito" class="btn w-100 shadow-lg" onclick="UserClickButton('8')"> 8 </button>
+ </div>
+<div class = "col">
+        <button id= "9" class="btn w-100  shadow-lg"onclick="UserClickButton('9')"> 9 </button>
+ </div>
+ <div class = "col">
+        <button id= "subtracao" class="btn w-100 shadow-lg"onclick="UserClickButton('-')"> - </button>
+ </div>
+ <div class = "col">
+        <button  id= "quatro" class="btn w-100 shadow-lg" onclick="UserClickButton('4')"> 4 </button>
+</div>
+<div class = "col">
+        <button  id="cinco" class="btn w-100 shadow-lg" onclick="UserClickButton('5')"> 5 </button>
+</div>
+<div class = "col">
+        <button  id="seis" class="btn w-100 shadow-lg" onclick="UserClickButton('6')"> 6 </button>
+</div>
+<div class = "col">
+        <button id="multiplicacao" class="btn w-100 0 shadow-lg" onclick="UserClickButton('*')"> * </button>
+</div>
+<div class = "col">
+        <button  id= "um" class="btn w-100  shadow-lg" onclick="UserClickButton('1')"> 1 </button>
+</div>
+<div class = "col">
+        <button  id= "dois" class="btn w-100  shadow-lg" onclick="UserClickButton('2')"> 2 </button>
+</div>
+<div class = "col">
+        <button id="tres" class="btn w-100  shadow-lg" onclick="UserClickButton('3')"> 3 </button>
+</div>
+<div class = "col">
+        <button id="divisao" class="btn w-100  shadow-lg" onclick='UserClickButton("/")'> / </button>
+</div>
+<div class = "col">
+        <button id="ponto" class="btn w-100 shadow-lg" onclick='UserClickButton(".")'> . </button>
+</div>
+<div class = "col">
+        <button id="zero" class="btn w-100  shadow-lg" onclick="UserClickButton('0')"> 0 </button>
+</div>
+<div class="col-6">
+       <button  id="igual" class="btn w-100  shadow-lg" onclick='CalculoIgualValue()'> = </button> 
+</div>
+ </div>
+ </div>
+       </script>
+</body>
+</html>
